@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Event</title>
+    <link rel="stylesheet" href="editJob.css">
+    <!-- Include any CSS files if needed -->
+</head>
+<body>
+    <h1>Edit Event</h1>
+
+    <div id="eventDetails"></div>
+
+    <form id="editEventForm">
+        <!-- Add input fields for editing event details -->
+        <label for="companyname">Company Name:</label>
+        <input type="text" id="companyname" name="companyname"><br>
+
+        <label for="jobtitle">job title:</label>
+        <input type="text" id="jobtitle" name="jobtitle"><br>
+
+        <label for="requiredskills">required skills:</label>
+        <input type="text" id="requiredskills" name="requiredskills"><br>
+        
+        <label for="budget">Budget:</label>
+        <input type="text" id="budget" name="budget"><br>
+        
+        <label for="hybrid">Mode:</label>
+        <input type="text" id="hybrid" name="hybrid"><br>
+
+        <label for="location">location:</label>
+        <input type="text" id="location" name="location"><br>
+
+        <label for="coninfo">contact information:</label>
+        <input type="text" id="coninfo" name="coninfo"><br>
+        
+        <label for="companylink">company Website :</label>
+        <input type="text" id="companylink" name="companylink"><br>
+
+        
+        <label for="jobDescription">Description:</label>
+        <textarea id="jobDescription" name="Description"></textarea><br>
+        
+        <button class="eventbutton" type="submit">Save Changes</button>
+    </form>
+
+    <script src="editJob.js"></script>
+</body>
+</html>

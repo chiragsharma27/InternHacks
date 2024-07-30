@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Cards</title>
+    <link rel="stylesheet" href="stucard1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="hevent">InternHacks</h1>
+        </div>
+        <div class="homeandstu">
+            <div class="redirecthome" onclick="redirecthome()">
+                <h3 class="homepage">Home</h3>
+            </div>
+            <div class="redirectstudent" onclick="redirectstudent()">
+                <h3 class="studentpage">Student Page</h3>
+            </div>
+        </div>
+    </header>
+    <div class="search">
+        <div class="nav-search">
+            <input placeholder="Search Language" class="search-input" oninput="createAndDisplayUserCards()">
+            <div class="search-icon"><i class="fas fa-search" onclick="createAndDisplayUserCards()"></i></div>
+        </div>
+    </div>
+
+    <div id="card-container" class="card-container"></div>
+
+    <script src="stucard1.js"></script>
+</body>
+</html>
+ 

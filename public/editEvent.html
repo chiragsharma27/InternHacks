@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Event</title>
+    <link rel="stylesheet" href="editEvent.css">
+    <!-- Include any CSS files if needed -->
+</head>
+<body>
+    <h1>Edit Event</h1>
+
+    <div id="eventDetails"></div>
+
+    <form id="editEventForm">
+        <!-- Add input fields for editing event details -->
+        <label for="eventName">Event Name:</label>
+        <input type="text" id="eventName" name="EventName" required>
+        <br>
+        
+        <label for="venue">Venue:</label>
+        <input type="text" id="venue" name="Venue" required>
+        <br>
+
+        <label for="participantsLimit">Participants Limit:</label>
+        <input type="number" id="participantsLimit" name="Participants_Limit" required>
+        <br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="Date" required>
+        <br>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="Time" required>
+        <br>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="Description" required></textarea>
+        <br>
+        
+        <button class="eventbutton" type="submit">Save Changes</button>
+    </form>
+
+    <script src="editEvent.js"></script>
+</body>
+</html>
